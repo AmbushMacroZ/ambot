@@ -1,20 +1,22 @@
 <DOCTYPE html>
 <html>
     <body>
-        var image = document.getElementById('img');
-        var images = ['1.png', '1.png'];
-        var a = 0;
+        <script>
+            var image = document.getElementById('img');
+            var images = ['1.png', '1.png'];
+            var a = 0;
  
-        function SetImage() {
-            if (a == 0) {
-                image.setAttribute('src', images[0]);
-                a = 1;
-            } else {
-                image.setAttribute('src', images[1]);
-                a = 0;
+            function SetImage() {
+                if (a == 0) {
+                    image.setAttribute('src', images[0]);
+                    a = 1;
+                } else {
+                    image.setAttribute('src', images[1]);
+                    a = 0;
+                }
             }
-        }
  
-        setInterval(SetImage, 5000);
+            setInterval(SetImage, 5000);               
+        </script>
     </body>
 </html>
